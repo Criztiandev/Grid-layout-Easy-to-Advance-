@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;
+}
+
+.slider-container {
+  width: 100vmin;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: scroll;
+
+  scroll-snap-type: x mandatory;
+  border-radius: 5px;
+}
+
+.slider-container > * {
+  scroll-snap-align: start;
+}
+
+.images-container {
+  width: 100vmin;
+  height: 56vmin;
+  width: 100%;
+  overflow: hidden;
+}
+
+img {
+  max-height: 100%;
+  min-width: 100%;
+  user-select: none;
+  object-fit: cover;
+  object-position: center;
+}
