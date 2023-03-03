@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: #1e1e1e;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+
+  font-size: 1rem;
+  min-height: 100vh;
+
+  padding: 1rem;
+}
+
+[class^="item-"] {
+  place-items: center;
+  padding: 1rem;
+  border: 1px solid rgb(59, 104, 255);
+  border-radius: 5px;
+}
