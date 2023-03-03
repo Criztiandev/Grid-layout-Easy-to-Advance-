@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --base-color: rgb(59, 104, 255);
+}
+
 body {
   color: white;
   background: #1e1e1e;
