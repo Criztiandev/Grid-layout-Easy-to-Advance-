@@ -16,15 +16,21 @@ body {
   font-size: 1rem;
   font-weight: 400;
 
-  font-size: 1rem;
-  min-height: 100vh;
-
   padding: 1rem;
+  font-size: 1rem;
 }
 
 [class^="item-"] {
-  place-items: center;
+  width: 200px;
+  height: 200px;
   padding: 1rem;
   border: 1px solid rgb(59, 104, 255);
   border-radius: 5px;
+}
+
+.main-container {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
 }
